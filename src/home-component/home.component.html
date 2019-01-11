@@ -1,0 +1,10 @@
+<h1>
+	Home
+</h1>
+
+<p>
+	<button *ngIf="!auth.isAuthenticated()" (click)="auth.login()">Log In</button>
+  <button *ngIf="auth.isAuthenticated()" (click)="auth.logout()">Log Out</button>
+</p>
+
+<button (click)="gotoAccount()">Go to Account</button>
